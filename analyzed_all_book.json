@@ -1,0 +1,37 @@
+{
+    "bocchan.txt": {
+        "Openness": 0.86,
+        "Conscientiousness": 0.43,
+        "Extraversion": 0.34,
+        "Agreeableness": 0.58,
+        "Emotional range": 0.59
+    },
+    "chumonno_oi_ryoriten.txt": {
+        "Openness": 0.95,
+        "Conscientiousness": 0.26,
+        "Extraversion": 0.86,
+        "Agreeableness": 0.82,
+        "Emotional range": 0.43
+    },
+    "hashire_merosu.txt": {
+        "Openness": 0.92,
+        "Conscientiousness": 0.26,
+        "Extraversion": 0.83,
+        "Agreeableness": 0.77,
+        "Emotional range": 0.83
+    },
+    "kaijin_nijumenso.txt": {
+        "Openness": 0.9,
+        "Conscientiousness": 0.22,
+        "Extraversion": 0.07,
+        "Agreeableness": 0.78,
+        "Emotional range": 0.43
+    },
+    "ningen_shikkaku.txt": {
+        "Openness": 0.96,
+        "Conscientiousness": 0.41,
+        "Extraversion": 0.64,
+        "Agreeableness": 0.7,
+        "Emotional range": 0.64
+    }
+}
