@@ -59,7 +59,7 @@ def get_userstweets(screen_name):
 
 
 #検索したい相手を指定 
-print("相性を調べたい相手のuser_idを入力してください")
+print("自分のuser_idを入力してください")
 my_user_id = input('>> ')
 print('----------------------------------------------------')
 
