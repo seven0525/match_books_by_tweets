@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang='ja'>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  {% if title %}
+    <title>{{ title }}</title>
+  {% else %}
+    <title>test page</title>
+  {% endif %}
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__logo">
+      <h1 class="logo__title"><i class="fab fa-twitter-square"></i> あなたにあった本を見つけます</h1>
+      <div class="logo__text">
+        <p><a href="https://www.ibm.com/watson/jp-ja/developercloud/personality-insights.html">IBM Watson Personality Insights</a>を用いて、Twitterを分析</p>
+        <p>あなたの過去のツイートから性格を分析し、あなたにあった本を見つけます</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- user_nameを入力した後の画面 -->
+  {% if result%}
+  <main class="main">
+    <div class="user_input">
+      <h2>{{ my_user_name }}さんにおすすめの本は・・・・・・</h2>
+      <h1>
+          結果: {{ result }}
+      </h1>
+    </div>
+  </main>
+
+  {% else %}
+  
+  <main class="main">
+    <div class="user_input">
+      <form class="user_input__form" action="/result" method="post" name="userinputform">
+        <p>
+          あなたのTwitter ID: <input type="text" name="my_user_name">
+        </p>
+        <p>
+          <input type="submit" value="本を探す">
+        </p>
+      </form>
+    </div>
+  </main>
+
+  {% endif %}
+</body>
+</html>
