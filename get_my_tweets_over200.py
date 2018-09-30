@@ -12,10 +12,10 @@ from datetime import datetime
 from dateutil.relativedelta import relativedelta
 
 #APIキーの設置
-CONSUMER_KEY =  'Ojj0Pxe8CQ0ClLvnP1OQnvbBT'
-CONSUMER_SECRET = 'UiAFp6A9AvSb3Q7tD3NY5nr8bmGIvCtnGyQzlhnHxHeyY5bJI8'
-ACCESS_TOKEN = '999656799220322304-YJRSS4O7VvsZRCt2rsjrD32uiDs1rIC'
-ACCESS_SECRET = 'BNEd1qWjZzuwdiwRUl2xglkqpCrnR9dwgcdJLQfkUuGsk'
+CONSUMER_KEY =  ''
+CONSUMER_SECRET = ''
+ACCESS_TOKEN = ''
+ACCESS_SECRET = ''
 
 t = Twitter(auth=OAuth(
     ACCESS_TOKEN,
