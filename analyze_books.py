@@ -153,15 +153,19 @@ def main(my_user_name):
     user_personality = user_tweet_category_table[my_user_name]
 
     suggest_book = ""
+    img_path = "./static/images/nothing.jpg" # templates/index.htmlを基準にしたパス
     if user_personality == {'Openness', 'Extraversion'}:
         candidates = ['chumonno_oi_ryoriten', 'hashire_merosu']
         suggest_book = random.choice(candidates)
+        img_path = "./static/images/" + suggest_book + ".jpg"
     elif user_personality == {'Openness', 'Emotional range'}: 
         suggest_book = 'bocchan'
+        img_path = "./static/images/" + suggest_book + ".jpg"
     elif user_personality == {'Openness', 'Agreeableness'}:
         candidates = ['kaijin_nijumenso', 'ningen_shikkaku']
         suggest_book = random.choice(candidates)
+        img_path = "./static/images/" + suggest_book + ".jpg"
     else:
-        suggest_book = "not found a sugested book..."
+        suggest_book = "not found a suggested book..."
 
-    return suggest_book
+    return suggest_book, img_path

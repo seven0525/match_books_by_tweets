@@ -18,8 +18,8 @@ def add_user():
     my_user_name = request.form['my_user_name']
     if not my_user_name:
         return redirect('/')
-    result = analyze_books.main(my_user_name)
-    return render_template('index.html', title=title, result=result, my_user_name=my_user_name)
+    result, result_img = analyze_books.main(my_user_name)
+    return render_template('index.html', title=title, result=result, result_img=result_img, my_user_name=my_user_name)
 
 # # if __name__ == "__main__":
 # app.run(host="localhost")
