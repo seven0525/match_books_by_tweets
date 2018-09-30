@@ -20,10 +20,10 @@ import itertools
 import random
 
 #APIキーの設置
-CONSUMER_KEY =  'Ojj0Pxe8CQ0ClLvnP1OQnvbBT'
-CONSUMER_SECRET = 'UiAFp6A9AvSb3Q7tD3NY5nr8bmGIvCtnGyQzlhnHxHeyY5bJI8'
-ACCESS_TOKEN = '999656799220322304-YJRSS4O7VvsZRCt2rsjrD32uiDs1rIC'
-ACCESS_SECRET = 'BNEd1qWjZzuwdiwRUl2xglkqpCrnR9dwgcdJLQfkUuGsk'
+CONSUMER_KEY =  ''
+CONSUMER_SECRET = ''
+ACCESS_TOKEN = ''
+ACCESS_SECRET = ''
 
 t = Twitter(auth=OAuth(
     ACCESS_TOKEN,
@@ -71,9 +71,9 @@ def get_shaped_tweets(tweets_list):
     return shaped_tweets
 
 def get_personality(text):
-    api_version = "2017-10-13"
-    api_username = "396677bb-f0d3-4650-9d16-9e479f9e1f78"
-    api_password = "CyJVefXvDdIA"
+    api_version = ""
+    api_username = ""
+    api_password = ""
     api_url = "https://gateway.watsonplatform.net/personality-insights/api"
     
     personality_insights = PersonalityInsightsV3(
